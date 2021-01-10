@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  border: solid var(--gray);
+}
+
+.backdrop {
+  background: var(--ltgray);
+  border: solid var(--gray);
+  padding: 0.5em;
+}
+
+.gameday {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  justify-content: center;
+  border: solid var(--gray);
+  text-align: center;
+}
+.useful{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  justify-content: center;
+  border: solid var(--gray);
+}
+.span2{grid-area: auto/auto/auto/span 2;}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  list-style: none;
+}
+
+.menu li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: var(--ltgray);
+  border: solid var(--gray);
+  padding: 0.5em;
+}
